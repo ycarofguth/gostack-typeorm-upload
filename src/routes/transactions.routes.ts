@@ -12,7 +12,13 @@ transactionsRouter.get('/', async (request, response) => {
 });
 
 transactionsRouter.post('/', async (request, response) => {
-  // TODO
+  const { title, value, type, category } = request.body;
+  /**
+   * title = titulo da transaçao
+   * value = valor da transaçao
+   * type = income | outcome
+   * category id
+   */
 });
 
 transactionsRouter.delete('/:id', async (request, response) => {
